@@ -23,7 +23,7 @@ with open('test.csv', 'a') as f:
                     deleted_groupId.append(value["GroupId"])
                     #with open('test.csv', 'w') as f:
                     f.write("%s,%s.\n" % (value["GroupId"], datetime.datetime.now()))
-                    time.sleep(5)
+                    #time.sleep(5)
 
                 except ClientError as e:
                     f.write("%s.\n" % ('default delete error'))
